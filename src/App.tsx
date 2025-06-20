@@ -330,7 +330,7 @@ function App() {
 
       {/* People */}
       {people.length > 0 && (
-        <div className="my-5 grid grid-cols-3 gap-5">
+        <div className="my-5 grid grid-cols-3 max-sm:grid-cols-1 gap-5">
           {people.map((person: Person, pIndex: number) => ( // Gunakan Person interface
             <div key={pIndex} className='card bg-base-200 shadow-xl'>
               <div className="card-body">
