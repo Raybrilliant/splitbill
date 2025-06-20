@@ -246,7 +246,7 @@ function App() {
   return (
     // Home
     <div className='p-5 rounded-xl border space-y-3 border-black shadow-xl'>
-      <h1 className='font-semibold text-4xl text-center'>Split Bill</h1>
+      <h1 className='font-semibold text-4xl text-center'>Split Bill Aja</h1>
       <p className='text-center'>Gapang bagi nya, mudah nge share nya langsung pake whatsapp</p>
       {/* Tabs */}
       <section className='tabs tabs-border'>
@@ -337,7 +337,7 @@ function App() {
                 <div className='flex justify-between'>
                   <h2 className="card-title">{person.name}</h2>
                   <div>
-                    <a href={`https://wa.me/62${person.phone}?text=Halo, ${person.name}. Kamu ada bill yang belum dibayar sebanyak ${new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR' }).format(person.totalDue)} kamu bisa bayar melalui ${person.banks.map((bank) => bank.bankName + ' - ' + bank.accountNumber ).join(', ')}. Thank you. ~ Pesan digenerate pake SplitBill`} target="_blank" rel="noopener noreferrer" className='btn btn-primary btn-xs' >Tagih</a>
+                    <a href={`https://wa.me/62${person.phone}?text=Halo, ${person.name}. Kamu ada bill yang belum dibayar sebanyak ${new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR' }).format(person.totalDue)} kamu bisa bayar melalui ${person.banks.map((bank) => bank.bankName + ' - ' + bank.accountNumber ).join(', ')}. Thank you. ~ Pesan digenerate pake SplitBillAja`} target="_blank" rel="noopener noreferrer" className='btn btn-primary btn-xs' >Tagih</a>
                     <button className='btn btn-error btn-xs' onClick={() => handleRemovePeople(pIndex)}>Hapus</button>
                   </div>
                 </div>
