@@ -140,6 +140,7 @@ function App() {
     });
 
     setSelectedItems(selectedItemsData);
+    // @ts-ignore
     document.getElementById('addPeopleModal')?.showModal();
   };
 
@@ -150,6 +151,7 @@ function App() {
       quantity: Number(newItemQuantity)
     };
     setParsedItems([...parsedItems, newItem]);
+    // @ts-ignore
     document.getElementById('addItemModal')?.close();
     setNewItemName('');
     setNewItemPrice('');
@@ -209,6 +211,7 @@ function App() {
     setSelectedItems([]); // Reset item yang dipilih di tabel utama
 
     // Tutup modal
+    // @ts-ignore
     document.getElementById('addPeopleModal')?.close();
   };
 
@@ -270,6 +273,7 @@ function App() {
         {/* Input Manual */}
         <input type="radio" className='tab' name='tabs' aria-label="Input Manual"/>
         <div className='tab-content mt-5'>
+          {/* @ts-ignore */}
           <button className='btn btn-neutral' onClick={() => document.getElementById('addItemModal')?.showModal()}>Tambah Item Manual</button>
         </div>
       </section>
@@ -317,6 +321,7 @@ function App() {
             </tbody>
           </table>
           <div className='flex justify-center gap-2 my-5'>
+            {/* @ts-ignore */}
             <button className='btn btn-neutral' type="button" onClick={() => document.getElementById('addItemModal')?.showModal()}>Tambah Item</button>
             <button className='btn btn-neutral' type="submit">Add People</button>
           </div>
